@@ -19,6 +19,7 @@ app.engine('hbs', expressHbs({
 }));
 app.set('view engine', 'hbs');
 app.get('/driveMap', init);
+app.get('/driveMap/maps', getMaps);
 app.use(express.static(__dirname));
 var server = app.listen(8089, function() {
   var host = server.address()
@@ -35,7 +36,7 @@ function init(req, res) {
   res.render('index', req.params);
 }
 
-function request(req, res) {
+function getMaps(req, res) {
   var found = [],
     hash = md5(req.url.toLowerCase());
   db.loadCollections([hash]);
@@ -46,7 +47,7 @@ function request(req, res) {
   }
   //TODO: Rate limit this by url hash
   vosApi.get({
-    url: 'api/driveMap/' + req.params.episodeId + '/' + _.last(req.url.split('/')),
+    url: 'api/maps',
     success: function(data) {
       if (!res.headersSent) {
         res.send(data);
