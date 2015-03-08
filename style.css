@@ -14,7 +14,22 @@ body {
   background-color: hsl(0, 0%, 70%);
 }
 .driverow>div {
-  flex: 1;
+flex: 1;
+padding: 0px 4px;
+}
+.driverow>div.mapped {
+  flex: none;
+  width: 16px;
+}
+.driverow>div.mapped.yes {
+  background-color:green;
+}
+.driverow>div.mapped.no {
+  
+}
+.driverow>div.letter {
+  flex: none;
+  width: 16px;
 }
 .facility {
   margin: 11px;
