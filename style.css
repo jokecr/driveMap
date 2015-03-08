@@ -24,8 +24,11 @@ padding: 0px 4px;
 .driverow>div.mapped.yes {
   background-color:green;
 }
+.driverow>div.mapped.backup {
+  background-color:cyan;
+}
 .driverow>div.mapped.no {
-  
+
 }
 .driverow>div.letter {
   flex: none;
