@@ -21,7 +21,7 @@ Component.facility = React.createClass({
     })
     return (
       <div className="facility">
-        <div className="facilityLabel">
+        <div className="facilityHeader">
           Name:{this.props.facility.name}
         </div>
         <div className="drives">{rows}</div>
