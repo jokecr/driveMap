@@ -1,0 +1,43 @@
+{
+  "name": "driveMap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {},
+    "dependencies": {
+    "MD5": "^1.2.1",
+    "armrest": "~4.3.0",
+    "async": "^0.9.0",
+    "diskdb": "^0.1.14",
+    "express": "^4.11.2",
+    "express-handlebars": "~1.2.1",
+    "flux": "~2.0.1",
+    "http-proxy": "^1.8.1",
+    "immutable": "^3.6.2",
+    "jquery": "^2.1.3",
+    "moment": "^2.9.0",
+    "node-http-proxy": "^0.1.5",
+    "react": "^0.12.2",
+    "react-async": "~2.0.1",
+    "react-mini-router": "~1.1.1",
+    "react-router-component": "~0.24.1",
+    "sprintf": "~0.1.5",
+    "sprintf-js": "~1.0.2",
+    "swagger-node-express": "^2.1.3",
+    "underscore": "^1.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokecr/driveMap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jokecr/driveMap/issues"
+  },
+  "homepage": "https://github.com/jokecr/driveMap"
+}
